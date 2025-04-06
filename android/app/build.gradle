@@ -24,7 +24,7 @@ if (flutterVersionName == null) {
 }
 
 android {
-    namespace = "com.example.gt_max"
+    namespace = "com.example.lx"
     compileSdk = 34
     ndkVersion = flutter.ndkVersion
 
