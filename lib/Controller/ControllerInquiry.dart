@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:flutter_sms_inbox/flutter_sms_inbox.dart';
 import '/Controller/ControllerInfo.dart';
 import 'package:persian_datetime_picker/persian_datetime_picker.dart';
 import 'package:persian_number_utility/persian_number_utility.dart';
@@ -14,7 +13,7 @@ class Controllerreportsms extends GetxController {
   List<String> CopyMessage = <String>[];
   List<DateTime> CopyDate = <DateTime>[];
   Future<bool> GetMessages() async {
-    SmsQuery query = SmsQuery();
+    /* SmsQuery query = SmsQuery();
     List<SmsMessage> messages = await query.querySms(
       address: '+98${Get.find<Controllerinfo>().Phone.value.substring(1)}',
     );
@@ -23,7 +22,7 @@ class Controllerreportsms extends GetxController {
     CopyDate = List.generate(messages.length, (i) => messages[i].date!);
     Date = List.generate(
         messages.length, (i) => '${messages[i].date!.toPersianDate()}'.obs).obs;
-    Lenght.value = messages.length;
+    Lenght.value = messages.length; */
     return true;
   }
 
